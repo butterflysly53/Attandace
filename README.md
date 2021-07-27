@@ -1,4 +1,4 @@
-# Attandace : is a simple application
+# Attandace : is a simple data driven application
 
  🖥️ This repo contains basic PHP code for building a CRUD application.
  
