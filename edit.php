@@ -51,7 +51,8 @@ $attendees=$crud->getAttendeeDetails($id);
      value="<?php echo $attendees['contact_number'] ?>">
     <div id="PhoneHelp" class="form-text">We'll never share your Phone Number with anyone else.</div>
   </div>
-  
+
+<a href="viewrecords.php" class="btn btn-primary">Back</a>
 <button type="submit" name="submit" class="btn btn-success">Save Changes</button>
 </form>
 <?php } ?>
