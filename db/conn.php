@@ -1,17 +1,17 @@
 <?php
 //Development connection
- //$host="127.0.0.1";
- //$db="attandance";
- //$user="root";
- //$pass="";
- //$charset="utf8mb4";
+ $host="127.0.0.1";
+ $db="attandance";
+ $user="root";
+ $pass="";
+ $charset="utf8mb4";
 
  //Remote Database Connection
- $host="remotemysql.com";
- $db="T1mI7G4qEd";
- $user="T1mI7G4qEd";
- $pass="r2g0GlwcxS";
- $charset="utf8mb4";
+ //$host="remotemysql.com";
+ //$db="T1mI7G4qEd";
+ //$user="T1mI7G4qEd";
+ //$pass="r2g0GlwcxS";
+ //$charset="utf8mb4";
  $dsn="mysql:host=$host;dbname=$db;charset=$charset";
  
  try{
@@ -23,5 +23,8 @@
      throw new PDOException($e->getMessage());
  }
  require_once "crud.php";
+ require_once "user.php";
  $crud=new crud($pdo);
+ $user=new user($pdo);
+ $user->insertUser("admin","password");
 ?>
