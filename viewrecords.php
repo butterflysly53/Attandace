@@ -1,10 +1,10 @@
 <?php 
 $title="view_record";
 require_once "includes/header.php";
+require_once "includes/auth_check.php";
 require_once "db/conn.php";
    $results=$crud->getAttandees();
 ?>
-<br/>
 <br/>
 <h3 class="text-center text-secondary "> Event Attendee Details-</h3>
 <br/>
