@@ -1,6 +1,7 @@
 <?php 
 $title="view-record";
 require_once "includes/header.php";
+require_once "includes/auth_check.php";
 require_once "db/conn.php";
 if (!isset($_GET['id'])){
     //echo "<h1 class='text-danger text-center'> Please Check Details And Try Again </h1>";
@@ -12,6 +13,9 @@ else{
     
 ?>
 <br/>
+<br/>
+<img src="<?php echo empty($result['destination']) ? "uploads/blank.png" : $result['destination'] ; ?>" 
+  class="rounded-circle" style="width: 20%; height: 20%" />
 <br/>
 <br/>
  <div class="card" style="width: 18rem;">
