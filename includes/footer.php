@@ -1,10 +1,8 @@
 <br/>
 <br/>
-<br/>
-<br/>
-<div id="footer">
-    <?php echo 'copyright: '. date("y"); ?>
-</div>
+<div  class="container" >
+          <p style="text-align:center"> Copyright &copy; - IT Conference Attendance System <?php echo date('Y'); ?></p>
+ </div>
 </div>
  <!-- Optional JavaScript; choose one of the two! -->
 
