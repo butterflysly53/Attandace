@@ -10,8 +10,14 @@ if(isset($_POST['submit'])){
   $dob=$_POST["dob"];
   $speciality_id=$_POST["speciality"];
   $phone=$_POST["phone"];
+  $orig_file = $_FILES["avatar"]["tmp_name"];
+        $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+        $target_dir = 'uploads/';
+        $destination = "$target_dir$phone.$ext";
+        move_uploaded_file($orig_file,$destination);
+        
   //call function to insert and track if sucess or not
-  $isSucess=$crud->insertAttandees($fname,$email,$dob,$speciality_id,$phone);
+  $isSucess=$crud->insertAttandees($fname,$email,$dob,$speciality_id,$phone,$destination);
   if ($isSucess){
    // echo "<h1 class='text-center text-success'> You have been registered! </h1>";
     include "includes/successMessage.php";
@@ -24,8 +30,6 @@ if(isset($_POST['submit'])){
   }
 }
 ?>
-
-<br/>
 <!--This section prints the values that were paassed using get method -->
 
 <!--div class="card" style="width: 18rem;">
@@ -37,6 +41,9 @@ if(isset($_POST['submit'])){
     <p class="card-text">Contact Number: <?php # echo $_GET["phone"];  ?> </p>
   </div>
 </div>-->
+<img src="<?php echo $destination; ?>" class="rounded-circle" style="width: 20%; height: 20%" />
+<br/>
+<br/>
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Name: <?php echo  $_POST["Name"]; ?></h5>
