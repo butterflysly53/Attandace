@@ -8,11 +8,11 @@
 
          }
          //function to create a new record into the attandee database
-         public function insertAttandees($fname,$dob,$email,$specialty,$phone){
+         public function insertAttandees($fname,$dob,$email,$specialty,$phone,$destination){
             try {
                 //define sql statement
-                $sql="INSERT INTO attandee(name,email_id,Date_of_birth,speciality_id,contact_number) 
-                VALUES (:fname,:dob,:email,:specialty,:phone)";
+                $sql="INSERT INTO attandee(name,email_id,Date_of_birth,speciality_id,contact_number,destination) 
+                VALUES (:fname,:dob,:email,:specialty,:phone,:destination)";
                 //prepare sql statement for execution
                 $stmt=$this->db->prepare($sql);
                 //bind all the placeholders to the actual values
@@ -21,6 +21,7 @@
                 $stmt->bindparam(":email",$email);
                 $stmt->bindparam(":specialty",$specialty);
                 $stmt->bindparam(":phone",$phone);
+                $stmt->bindparam(":destination",$destination);
                 $stmt->execute();
                 return TRUE;
             } 
