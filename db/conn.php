@@ -6,7 +6,7 @@
  //$pass="";
  //$charset="utf8mb4";
 
-  Remote Database Connection
+  //Remote Database Connection
  $host="remotemysql.com";
  $db="T1mI7G4qEd";
  $user="T1mI7G4qEd";
