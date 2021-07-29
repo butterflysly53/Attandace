@@ -12,6 +12,7 @@
  $user="T1mI7G4qEd";
  $pass="r2g0GlwcxS";
  $charset="utf8mb4";
+ 
  $dsn="mysql:host=$host;dbname=$db;charset=$charset";
  
  try{
