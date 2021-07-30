@@ -8,9 +8,9 @@
 
   //Remote Database Connection
  $host="remotemysql.com";
- $db="T1mI7G4qEd";
- $user="T1mI7G4qEd";
- $pass="r2g0GlwcxS";
+ $db="8lyPvqriEp";
+ $user="8lyPvqriEp";
+ $pass="82bERMMJpb";
  $charset="utf8mb4";
  
  $dsn="mysql:host=$host;dbname=$db;charset=$charset";
