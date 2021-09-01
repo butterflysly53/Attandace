@@ -1,11 +1,4 @@
 <?php
-//Development connection
- //$host="127.0.0.1";
- //$db="attandance";
- //$user="root";
- //$pass="";
- //$charset="utf8mb4";
-
   //Remote Database Connection
  $host="remotemysql.com";
  $db="8lyPvqriEp";
