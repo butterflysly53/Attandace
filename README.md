@@ -1,4 +1,4 @@
-# Attendace : is a simple data driven application
+# Attendace : A simple data driven application
 <div align="right">
 <img src="https://github.com/butterflysly53/Attendance/blob/main/uploads/Get%20in%20touch-pana.png" width="300" height="300">
 </div>
