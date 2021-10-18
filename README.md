@@ -11,4 +11,4 @@
 
 - They had a choice to see other attendees.(admin only)
 
--  If needed saved records can be modified.
+- Saved records are editable.(update and delete can be done )
