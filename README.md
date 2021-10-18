@@ -7,7 +7,7 @@
 
 ## Features
 
-- 🖥️ This repo contains basic PHP code for building a CRUD application.
+- 🖥️ This repo contains code for a PHP based CRUD application.
  
 - This application will help users registering themselves for any conference.
 
