@@ -4,7 +4,6 @@
 </div>
 
 
-
 ## Features
 
 - 🖥️ This repo contains code for a PHP based CRUD application.
